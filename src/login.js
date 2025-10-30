@@ -18,7 +18,7 @@ function Login({ onLogin }) {
     const payload = isLogin ? { username, password } : { username, password, email };
 
     try {
-      const response = await fetch(`https://YOUR-BACKEND-URL.onrender.com/api/${endpoint}`, {
+      const response = await fetch(`https://currency-converter-backend-qme9.onrender.com/api/${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
